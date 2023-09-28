@@ -1,0 +1,55 @@
+.laptop {
+    padding: 90px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    .right {
+        flex: 1;
+        img {
+            width: 140%;
+            margin-left: -40%;
+        }
+    }
+    .left {
+        flex: 1;
+        > div:first-child {
+            margin-bottom: 60px;
+        }
+        div {
+            h3 {
+                color: $Verydarkblue;
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            p {
+                line-height: 1.6;
+                color: $Verydarkblue;
+                width: 75%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .laptop {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        .right {
+            img {
+                width: 100%;
+                margin: 0 !important;
+            }
+        }
+        .left {
+            div {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

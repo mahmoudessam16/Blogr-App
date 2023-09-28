@@ -1,0 +1,57 @@
+.state {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/bg-pattern-circles.svg), linear-gradient(to right, $oneGredientBlue 30%, $twoGradientBlue);
+    background-repeat: no-repeat;
+    border-radius: 0 100px 0 100px;
+    background-position: -100% 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left-side {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 70%;
+        }
+    }
+    .right-side {
+        flex: 1;
+        h2 {
+            color: $White;
+            font-size: 32px;
+        }
+        p {
+            color: #eee;
+            width: 70%;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .state {
+        flex-direction: column;
+        background-image: url(../images/bg-pattern-circles.svg), linear-gradient(to right, $oneGredientBlue 30%, $twoGradientBlue);
+        height: auto;
+        width: 100%;
+        margin: 150px 0 0 0;
+        background-size: cover;
+        background-position: 0px 0px;
+        padding: 0 10px 120px 10px;
+        .left-side {
+            img {
+                width: 100%;
+                margin-top: -150px;
+            }
+        }
+        .right-side {
+            text-align: center;
+            p {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+}
